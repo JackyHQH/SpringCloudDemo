@@ -2,3 +2,5 @@
 /server2/target/
 
 .idea/*
+
+.git/*
