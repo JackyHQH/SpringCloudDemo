@@ -1,2 +1,4 @@
 # Project exclude paths
 /server2/target/
+
+.idea/*
