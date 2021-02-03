@@ -1,0 +1,20 @@
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    # 表示是否从eureka服务器获取注册信息
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:9900/eureka/
+
+server:
+  port: 9902
+
+spring:
+  application:
+    name: feign
+feign:
+  hystrix:
+    enabled: true
+
